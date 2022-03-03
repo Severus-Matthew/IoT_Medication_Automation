@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MediTrack Web Controller</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><i class="fa fa-medkit"></i><span>  MediTrack</span> Web Controller</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>CREATED BY</h3>
+        <ul>
+            <li><i class="fa fa-users"></i> Team Technocrats</li>
+            <li><i class="fa fa-university"></i>National Institute Of Technology Patna</li>
+            <li style="margin-bottom:10px; margin-top:10px"><b>TEAM MEMBERS </b></li>
+            <li><i class="fa fa-female"></i>  Manvi Jha</li>
+            <li><i class="fa fa-envelope"></i> drprofmjha@gmail.com</li>
+            <li><i class="fa fa-phone"></i>+916207733016</li>
+            <li><i class="fa fa-female"></i>  Samriddhi Ambastha</li>
+            <li><i class="fa fa-envelope"></i> ambasthasamriddhi@gmail.com</li>
+            <li><i class="fa fa-phone"></i>+916207733016</li>
+
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Please Fill In The Details of The Patient</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+            <p>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label>Time Of Medicine (Hour)</label>
+                <input type="number" name="Hour" id="Hour">
+            </p>
+            <p>
+                <label>Email Address</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label>Time Of Medicine (Min)</label>
+                <input type="number" name="Min" id="Min">
+            </p>
+            <p>
+                <label>Name Of Doctor</label>
+                <input type="text" name="message" id="message">
+            </p>
+            <p>
+                <label>Name Of Hospital</label>
+                <input type="text" name="message2" id="message2">
+            </p>
+            <p class="full">
+                <button type="submit">Update</button>
+            </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
